@@ -1,0 +1,34 @@
+Schedule/TableImage version 1.00
+=  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==  ==
+
+Schedule::TableImage absolutely relies on Image::Magick being installed on your system.
+Schedule::TableImage creates a image of a schedule with labelled events. 
+This schedule image is a grid in which days are labelled horizontally and hours are labelled vertically.  
+This is useful to a week view, although you can have as many days as you would like, with any label you like.
+Events are colored boxes with text labels for a given time and day. 
+If events overlap on a given day or time, the width of the day expands to accomodate both (or all) events.
+
+
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+	Image::Magick
+	Text::Wrapper
+
+COPYRIGHT AND LICENCE
+
+Copyright (c) 2003 Rebecca A Hunt. All rights reserved. 
+
+This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself. 
+
+
