@@ -11,7 +11,7 @@ require Exporter;
 use fields qw(days hours events width height xoffset yoffset totaldays totalhours daywidth hourheight image max_textlen);
 use vars qw(%FIELDS $VERSION);
 
-$VERSION = '1.10';
+$VERSION = '1.13';
 
 #-----------------------------
 # new

@@ -24,6 +24,13 @@ This module requires these other modules and libraries:
 
 	Image::Magick
 	Text::Wrapper
+	Font files used by Image::Magick (Ghostscript, X server with font specifications, or TrueType fonts)
+
+NOTE ON FONTS:
+
+	The demo and test use a postscript format name "Helvetica".  This requires that you have the Ghostscript fonts installed on your system in order for the tests to pass.  You can use this module without the Ghostscript fonts, but you must then choose either the X server fonts, or true type fonts.  For more information, read the ImageMagick Fonts documentation.
+
+	If no font is passed in when a new instance of the module is created, this module looks for the truetype font: /usr/local/share/fonts/ttf/arial.ttf.  If you do not have this path or this font in your system, be sure to specify the font.
 
 COPYRIGHT AND LICENCE
 

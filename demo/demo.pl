@@ -60,7 +60,7 @@ sub main {
 
         
     # TableImage takes array references to above arrays
-    my $cal = Schedule::TableImage->new(days => \@days, hours => \@hour);
+    my $cal = Schedule::TableImage->new(days => \@days, hours => \@hour, font=>"Helvetica");
     $cal->add_events(\@events);
     $cal->write_image($path);
     print "wrote output to $path \n\n";
