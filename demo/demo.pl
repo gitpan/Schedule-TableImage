@@ -1,3 +1,4 @@
+use lib './../../';
 use Schedule::TableImage;
 use strict;
 
@@ -43,7 +44,7 @@ sub main {
     # information about events
     # each event is a hash    
     my @events = (
-		  { title      => 'SampleEventS',
+		  { title      => 'Sample',
 		    begin_time => '1800',
 		    end_time   => '1930',
 		    day_num    => '1',
